@@ -1,0 +1,88 @@
+/* POSTS */
+.admin_posts_wrapper {
+    width: 900px;
+    margin: 80px auto;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.post.post_admin {
+    width: inherit;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 10px;
+    margin-bottom: 10px;
+}
+.post.post_admin .post_row {
+    width: inherit;
+    display: grid;
+    background-color: #fff;
+    font-size: 14px;
+    column-gap: 30px;
+    width: 900px;
+    grid-template-columns: 140px 240px 100px 100px 200px;
+    align-items: center;
+    box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 1px 3px 1px;
+}
+.post.post_admin .img_wrapper {
+    width: 100%;
+    height: 100px;
+}
+.post.post_admin .img_wrapper img, .post_admin_img img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+.admin_post_title a {
+    color: #000;
+}
+.admin_post-links {
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 20px;
+}
+.edit-link {
+    cursor: pointer;
+    color: rgb(25, 75, 155);
+}
+.del-link {
+    cursor: pointer;
+    color: rgb(165, 14, 14);
+}
+
+
+/* ADD POST */
+.add-post-wrapper {
+    width: 900px;
+    margin: 80px auto;
+}
+
+.post-form .input-col {
+    margin-bottom: 20px;
+}
+.post-form .input-col input {
+    border-bottom: 1px solid rgb(202, 202, 202);
+    background-color: #ffffff;
+    padding-left: 0;
+}
+.post-form .form-group {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1280px) {
+    .add-post-wrapper {
+        width: 100%;
+        margin: 80px auto;
+    }
+}
+@media screen and (max-width: 800px) {
+    .admin_posts_wrapper {
+        width: 600px;
+        overflow-X: scroll;
+    }
+}
+
+
+
+
+
